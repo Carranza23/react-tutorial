@@ -20,7 +20,7 @@ render() {
     <div className="container">
       <Table characterData={characters} removeCharacter={this.removeCharacter} />
     </div>
-  )
+    )
+  }
 }
-
 export default App

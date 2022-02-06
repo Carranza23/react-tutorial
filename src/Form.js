@@ -7,7 +7,7 @@ class Form extends Component {
   }
 
   state = this.initialState
-}
+
 
   handleChange = (event) => {
     const {name, value} = event.target
@@ -16,7 +16,7 @@ class Form extends Component {
       [name]: value,
     })
   }
-render () {
+  render() {
   const { name, job } = this.state;
 
   return (
@@ -36,7 +36,6 @@ render () {
         value={job}
         onChange={this.handleChange} />
     </form>
-  );
+  )};  
 }
-
 export default Form;
